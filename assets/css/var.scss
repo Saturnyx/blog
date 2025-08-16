@@ -1,0 +1,18 @@
+$foreground-color: #dadada;
+$background-color: #1f1f1f;
+$border: #424242;
+$text: "Libertinus Sans", "EB Garamond", sans-serif;
+$heading: "Jost";
+$link-default: #5c33ad;
+$link-visited: #9966ff;
+$link-hover: #cfbbf6;
+
+// Navigation colors
+$nav-background: $background-color;
+$nav-border: $border;
+$nav-brand-color: $foreground-color;
+$nav-link-color: $link-default;
+$nav-link-hover: $link-hover;
+$nav-dropdown-background: $background-color;
+$nav-dropdown-shadow: rgba(92, 51, 173, 0.2);
+$nav-dropdown-hover-bg: $border;

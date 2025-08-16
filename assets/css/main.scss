@@ -1,0 +1,98 @@
+@use "var" as *;
+@use "nav";
+
+body {
+  font-family: $text;
+  color: $foreground-color;
+  line-height: 1.6;
+  margin: 0;
+  background-color: $background-color;
+}
+
+main {
+  padding: 0 20vw;
+}
+
+h1 {
+  color: $foreground-color;
+  text-align: center;
+  font-size: 7rem;
+  font-family: $heading;
+  line-height: 1;
+  padding: 1rem;
+  margin: 5vh 0 0 0;
+}
+
+h2 {
+  color: $foreground-color;
+  text-align: left;
+  font-size: 3rem;
+  font-family: $heading;
+  line-height: 1;
+  padding: 1rem 0 0 0;
+  margin: 0;
+}
+
+h3 {
+  color: $foreground-color;
+  text-align: left;
+  font-size: 2rem;
+  font-family: $heading;
+  line-height: 1;
+  padding: 1rem 0 0 0;
+  margin: 0;
+}
+
+h4 {
+  color: $foreground-color;
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: $heading;
+  line-height: 1;
+  padding: 1rem 0 0 0;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+  font-family: $text;
+  font-size: 1rem;
+}
+
+a {
+  color: $link-default;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  &:visited {
+    color: $link-visited;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: $foreground-color;
+}
+
+.subtitle {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Remove horizontal scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
