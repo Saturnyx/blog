@@ -6,18 +6,7 @@
 
     <div class="nav-links">
       <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
-
-      <div class="nav-dropdown">
-        <a href="#" class="nav-link dropdown-toggle">Posts</a>
-        <div class="dropdown-menu">
-          {% for post in site.posts %}
-          <a href="{{ post.url | relative_url }}" class="dropdown-item">
-            {{ post.title }}
-          </a>
-          {% endfor %}
-        </div>
-      </div>
-
+      <a href="{{ '/posts' | relative_url }}" class="nav-link">Posts</a>
       <a href="{{ '/about' | relative_url }}" class="nav-link">About</a>
     </div>
   </div>

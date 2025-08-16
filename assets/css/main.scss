@@ -1,6 +1,7 @@
 @use "var" as *;
 @use "nav";
 @use "footer";
+@use "posts";
 
 body {
   font-family: $text;

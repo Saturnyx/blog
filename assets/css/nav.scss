@@ -2,7 +2,7 @@
 
 .post-navigation {
   background-color: $nav-background;
-  border-bottom: 1px solid $nav-border;
+  border-bottom: 1.5px solid $nav-border;
   padding: 1rem 0;
   margin-bottom: 2rem;
 }
@@ -81,7 +81,7 @@
   top: 100%;
   left: 0;
   background: $nav-dropdown-background;
-  border: 1px solid $nav-border;
+  border: 1.5px solid $nav-border;
   border-radius: 4px;
   padding: 0.5rem 0;
   min-width: 130px;
