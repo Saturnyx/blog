@@ -46,6 +46,10 @@
     color: $nav-link-hover;
   }
 
+  &:visited {
+    color: $nav-link-color;
+  }
+
   &.dropdown-toggle {
     cursor: pointer;
     
