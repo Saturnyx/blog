@@ -1,9 +1,8 @@
 ---
-layout: post
-title: About
+layout: post 
+title: About 
 permalink: /about/
 ---
-
 ## Hello! I'm Harshal
 
 _Har-shell (He/Him)_
@@ -43,12 +42,3 @@ _Har-shell (He/Him)_
 
 - [Curator](https://github.com/Saturnyx/curator)
 - [KeyItems](https://modrinth.com/mod/keyitems)
-
-### Contacting me
-
-If you need to contact me privately, email <saturnyx@disroot.org>. Please rememeber that it will take a few hours to days for me to respond, depending on my availability.
-
-<!---
-Harshal-ACSI/Harshal-ACSI is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->

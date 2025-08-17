@@ -21,7 +21,7 @@ input {
   border: 1.5px solid var(--margin-color);
   outline: none;
   background-color: var(--widget-bg-color);
-  font-family: $text;
+  font-family: $heading;
   font-size: 1rem;
 }
 
@@ -38,7 +38,7 @@ textarea {
   border: 1.5px solid var(--margin-color);
   outline: none;
   background-color: var(--widget-bg-color);
-  font-family: $text;
+  font-family: $heading;
   font-size: 0.75rem;
 }
 
@@ -58,7 +58,7 @@ form button {
   border: 1.5px solid var(--margin-color);
   outline: none;
   background-color: var(--bg-color);
-  font-family: $text;
+  font-family: $heading;
   font-size: 1rem;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
     border-color 0.3s ease-in-out;
@@ -84,7 +84,7 @@ form button:hover {
   color: var(--text-color);
   border-top: 1.5px solid var(--margin-color);
   background-color: var(--widget-bg-color);
-  font-family: $text;
+  font-family: $heading;
   gap: 1vw;
   grid-template-columns: 1fr 1fr;
 }
@@ -102,7 +102,7 @@ form button:hover {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: normal;
 }
 
