@@ -79,13 +79,13 @@
 }
 
 // Responsive design
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .posts-list .posts-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .posts-list .posts-grid {
     grid-template-columns: repeat(3, 1fr);
   }
