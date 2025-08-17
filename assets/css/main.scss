@@ -15,10 +15,15 @@ main {
   padding: 0 20vw;
 }
 
+@media (max-width: 600px) {
+  main {
+    padding: 0 7vw;
+  }
+}
 h1 {
   color: $foreground-color;
   text-align: center;
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 6rem);
   font-family: $heading;
   line-height: 1;
   padding: 1rem;
@@ -28,7 +33,7 @@ h1 {
 h2 {
   color: $foreground-color;
   text-align: left;
-  font-size: 2.5rem;
+  font-size: clamp(1.7rem, 3vw, 4rem);
   font-family: $heading;
   line-height: 1;
   padding: 1rem 0 0 0;
@@ -38,7 +43,7 @@ h2 {
 h3 {
   color: $foreground-color;
   text-align: left;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
   font-family: $heading;
   line-height: 1;
   padding: 1rem 0 0 0;
@@ -48,7 +53,7 @@ h3 {
 h4 {
   color: $foreground-color;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2vw, 2rem);
   font-family: $heading;
   line-height: 1;
   padding: 1rem 0 0 0;
@@ -62,7 +67,8 @@ p {
   margin: 0.5rem 0;
 }
 
-ul, ol {
+ul,
+ol {
   font-family: $text;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -96,7 +102,12 @@ a {
   }
 }
 
-
+hr {
+  height: 1.5px;
+  color: $border;
+  background-color: $border;
+  border: none;
+}
 
 footer {
   text-align: center;
@@ -107,7 +118,7 @@ footer {
 
 .subtitle {
   text-align: center;
-  padding: 0;
+  padding: 0 0 3rem 0;
   margin: 0;
 }
 

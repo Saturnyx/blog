@@ -10,6 +10,8 @@ _I decide to start on a new project - A cool CLI tool. I want it to_
 _be fast, reliable, and easy to maintain. Hmm, should I use C++ or Rust? The_
 _choice is not easy as it seems..._
 
+---
+
 When it comes to high-performance low-level applications, C++ and Rust are two
 of the most popular languages. Both have their strengths and weaknesses, and the
 choice between them often depends on the specific requirements of the project.
@@ -109,6 +111,8 @@ and concurrency, and are willing to invest time in learning a new language,
 Rust could be the better option. Both languages have their place in the
 programming landscape, and understanding their differences can help you make an
 informed decision for your next project.
+
+---
 
 _C++ is a nice language to use, but it's been a while since I've learnt a new_
 _language. I start working on my new project -_

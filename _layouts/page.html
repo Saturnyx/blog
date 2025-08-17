@@ -23,8 +23,7 @@
       referrerpolicy="no-referrer"
     />
     <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-
+    <meta name="description" content="{{ site.description }}" />
   </head>
 
   <body>
@@ -35,5 +34,11 @@
       {{ content }}
     </main>
     {% include footer.html %}
+    <script>
+      document.querySelectorAll('a[href^="http"]').forEach((link) => {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      });
+    </script>
   </body>
 </html>
