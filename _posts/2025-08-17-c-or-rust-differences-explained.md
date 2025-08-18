@@ -39,15 +39,14 @@ programming errors such as null pointer dereferences.
 ## Performance
 
 The main reason you probably consider C++ or Rust is performance. Both compilers
-use an LLVM backend, but of the time, C++ is slightly faster than Rust. You can
+use an LLVM backend, but most of the time, C++ is slightly faster than Rust.
 You can check out the exact benchmarks [on this website](https://benchmarksgam
 e-team.pages.debian.net/benchmarksgame/fastest/rust-gpp.html). C++ tends to have
 a more mature ecosystem with highly optimized libraries and tools. On the other
-hand, Rust is still catching up, but it has made significant
-progress in recent years. C++ also gives you more control over low-level
-optimizations, which can lead to better performance in some cases. Rust, on
-the other hand, is still evolving and may not have the same level of
-optimization as C++.
+hand, Rust is still catching up, but it has made significant progress in recent
+years. C++ also gives you more control over low-level optimizations, which can
+lead to better performance in some cases. Rust, on the other hand, is still
+evolving and may not have the same level of optimization as C++.
 
 ## Safety
 
@@ -81,10 +80,10 @@ widely used in various domains, including game development, system programming,
 and scientific computing. The C++ Standard Library provides a rich set of
 features, and there are many third-party libraries available for various tasks.
 Rust, while newer, has been rapidly growing its ecosystem. The Rust community is
-active and supportive, and the language has a package manager called
-[Cargo](https://crates.io) that makes it easy to manage dependencies. Rust's
-ecosystem is still maturing, but it has already gained traction in areas such as
-web development, embedded systems, and systems programming.
+active and supportive, and the language has a package manager called [Cargo](htt
+ps://crates.io) that makes it easy to manage dependencies. Rust's ecosystem is
+still maturing, but it has already gained traction in areas such as web
+development, embedded systems, and systems programming.
 
 ## Community and Support
 
@@ -94,8 +93,8 @@ forums, and documentation available. However, the C++ community can sometimes
 be fragmented, with different standards and practices across various projects.
 Rust, on the other hand, has a strong emphasis on community and collaboration.
 The Rust community is known for being welcoming and inclusive, with a focus on
-helping newcomers. The official Rust documentation is comprehensive and well-
-maintained, making it easier for developers to get started.
+helping newcomers. The official Rust documentation is comprehensive, making it
+easier for developers to get started.
 
 ## Conclusion
 
