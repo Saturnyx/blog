@@ -56,11 +56,12 @@ Memory safety refers to a software's ability to prevent memory-related errors
 and vulnerabilities, ensuring reliable and secure operation. C++ and C tend to
 have many memory-related vulnerabilities as compared to languages such as
 [Python](https://www.python.org/) and [Java](https://www.java.com/en/). This is
-Rust comes in. Rust offers speed and memory safety, making it a great choice for
-high-performance applications. Rust does this through its ownership model,
-which ensures that memory is managed safely and efficiently. This model prevents
-common programming errors such as null pointer dereferences and buffer overflows,
-which are often the source of security vulnerabilities in C and C++ programs.
+where Rust comes in. Rust offers speed and memory safety, making it a great
+choice for high-performance applications. Rust does this through its ownership
+model, which ensures that memory is managed safely and efficiently. This model
+prevents common programming errors such as null pointer dereferences and buffer
+overflows, which are often the source of security vulnerabilities in C and C++
+programs.
 
 ## Learning Curve
 
