@@ -1,52 +1,59 @@
 ---
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ '/assets/css/index.css' | relative_url }}" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ site.description }}" />
-  </head>
-  <body>
-    {% include nav.html %}
-    <main>
-      <h1>Hello, I am Harshal</h1>
-      <p>
-        Welcome to my blog where I share my thoughts on programming, technology, and life. Here
-        you'll find articles about web development, software engineering best practices, and my
-        journey as a developer. Feel free to explore and reach out if you have any questions or
-        suggestions!
-      </p>
-      <h2>Stuff I'll be posting</h2>
-      <ul>
-        <li>Programming</li>
-        <li>Personal Projects</li>
-        <li>VEX Robotics</li>
-        <li>Other cool stuff</li>
-      </ul>
-      <p>Thanks for visiting! Stay tuned for new posts and updates. Have a great day!</p>
-    </main>
-    {% include footer.html %}
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="{{ '/assets/css/index.css' | relative_url }}"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>{{ page.title }}</title>
+        <meta name="description" content="{{ site.description }}" />
+    </head>
+    <body>
+        {% include nav.html %}
+        <main>
+            <h1>Hello, I am Harshal</h1>
+            <p>
+                Welcome to my blog where I share my thoughts on programming,
+                technology, and life. Here you'll find articles about web
+                development, software engineering best practices, and my journey
+                as a developer. Feel free to explore and reach out if you have
+                any questions or suggestions!
+            </p>
+            <h2>Stuff I'll be posting</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Personal Projects</li>
+                <li>VEX Robotics</li>
+                <li>Other cool stuff</li>
+            </ul>
+            <p>
+                Thanks for visiting! Stay tuned for new posts and updates. Have
+                a great day!
+            </p>
+        </main>
+        {% include footer.html %} {% include analytics.html %}
+    </body>
 </html>
