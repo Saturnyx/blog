@@ -53,3 +53,8 @@ Windows user like me, you probably have to use WSL or some other virtualization
 platform. [This guide](https://learn.microsoft.com/en-us/windows/wsl/install)
 will help you install WSL on your system. From then on, you can continue with
 the standard installation on bash.
+
+---
+_I finally setup my Hyper-V Virtual Machine (Hyper-V is a platform similar to_
+_WSL). I run the installation command. "Installation failed. error: ..." it_
+_returns. AARGH!!! Seems like the installation is not as easy as it seems..._
