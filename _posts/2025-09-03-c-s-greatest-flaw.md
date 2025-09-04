@@ -86,8 +86,8 @@ two options - Either take more time and dedication to climb the steep learning
 curve or pick a simpler language to act as a stepping stone. At the end of the
 day, it is your choice on which path you'll choose.
 
-
 ## Conclusion
+
 C++ is a great language, but it also has its own downsides. This doesn't mean
 that you have to quit C++ entirely, maybe you can choose another solution or
 even create one - there are many ways to tackle the problem of C++.
