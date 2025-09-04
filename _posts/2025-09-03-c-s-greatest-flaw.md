@@ -3,7 +3,7 @@ layout: post
 title: C++'s Greatest Flaw
 description: "C++ is a great language, but it has its downsides."
 date: 2025-09-03 21:55 +0800
-categories: programming
+categories: programming-news
 ---
 
 _I was busy coding a library for my Vex V5 Robot when I stumbled upon an error_

@@ -18,17 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Harshal's Blog
+title: Saturnyx's Blog
 author: Harshal
 email: saturnyx@disroot.org
-baseurl: ""
+baseurl: "https://harshal.is-cool.dev/"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  saturnyx
+github_username: saturnyx
 
 # Build settings
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -3,7 +3,7 @@ layout: post
 title: What is Mojo?
 description: "The next new Python? How do I use it?"
 date: 2025-08-22 09:37 +0800
-categories: programming
+categories: programming-news
 ---
 
 _"What are the best Python implementations?", I type into Google. I was_
