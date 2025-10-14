@@ -2,6 +2,7 @@
 @use "nav";
 @use "footer";
 @use "posts";
+@use "extern.css";
 
 body {
     font-family: $text;
@@ -25,6 +26,7 @@ h1 {
     text-align: center;
     font-size: clamp(2rem, 5vw, 6rem);
     font-family: $heading;
+    font-weight: 700;
     line-height: 1;
     padding: 6rem 0 1rem 0;
     margin: 5vh 0 0 0;
@@ -35,6 +37,7 @@ h2 {
     text-align: left;
     font-size: clamp(1.7rem, 3vw, 4rem);
     font-family: $heading;
+    font-weight: 650;
     line-height: 1;
     padding: 1rem 0 0 0;
     margin: 0;
@@ -45,6 +48,7 @@ h3 {
     text-align: left;
     font-size: clamp(1.5rem, 2.5vw, 3rem);
     font-family: $heading;
+    font-weight: 600;
     line-height: 1;
     padding: 1rem 0 0 0;
     margin: 0;
@@ -55,6 +59,7 @@ h4 {
     text-align: left;
     font-size: clamp(1.2rem, 2vw, 2rem);
     font-family: $heading;
+    font-weight: 550;
     line-height: 1;
     padding: 1rem 0 0 0;
     margin: 0;
