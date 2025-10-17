@@ -138,3 +138,14 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Edge */
 }
+
+::selection {
+  background-color: $highlight-bg;
+  color: $highlight-fg;
+}
+
+/* For Firefox compatibility */
+::-moz-selection {
+  background-color: $highlight-bg;
+  color: $highlight-fg;
+}

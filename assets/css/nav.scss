@@ -1,9 +1,9 @@
 @use "var" as *;
 
 .post-navigation {
-    background-color: $nav-background;
-    border-bottom: 1.5px solid $nav-border;
-    padding: 1rem 0;
+    background-color: $background-color;
+    border-bottom: 1.5px solid $border;
+    padding:0;
     margin-bottom: 2rem;
     position: fixed;
     width: 100vw;
@@ -11,9 +11,8 @@
 }
 
 .nav-container {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,33 +23,40 @@
     font-weight: bold;
     font-family: $heading;
     text-decoration: none;
-    color: $nav-brand-color;
-    transition: color 0.3s ease;
+    color: $link-visited !important;
+    padding-left: 1rem;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
-        color: $nav-link-hover;
+        color: $link-hover !important;
     }
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5px;
+    left: 0;
 }
 
 .nav-link {
     text-decoration: none;
-    color: $nav-link-color;
+    color: $link-visited;
+    padding: 1rem;
     font-weight: 500;
     font-family: $text;
     transition: color 0.3s ease;
+    outline:1.5px solid $border;
+    background: $background-color;
+transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
     &:hover {
-        color: $nav-link-hover;
+        color: $background-color !important;
+        background: $foreground-color !important;
     }
 
     &:visited {
-        color: $nav-link-color;
+        color: $link-visited;
     }
 
     &.dropdown-toggle {
@@ -83,8 +89,8 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: $nav-dropdown-background;
-    border: 1.5px solid $nav-border;
+    background: $background-color;
+    border: 1.5px solid $border;
     border-radius: 4px;
     padding: 0.5rem 0;
     min-width: 130px;
@@ -95,14 +101,14 @@
 .dropdown-item {
     display: block;
     padding: 0.5rem 1rem;
-    color: $nav-link-color;
+    color: $link-visited;
     text-decoration: none;
     font-family: $text;
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: $nav-dropdown-hover-bg;
-        color: $nav-link-hover;
+        background-color: $border;
+        color: $link-hover;
     }
 }
 

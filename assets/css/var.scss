@@ -6,13 +6,5 @@ $link-visited: #9966ff;
 $link-hover: #cfbbf6;
 $text: "Mona Sans", "EB Garamond", sans-serif;
 $heading: "Hubot Sans", sans;
-
-// Navigation colors
-$nav-background: $background-color;
-$nav-border: $border;
-$nav-brand-color: $foreground-color;
-$nav-link-color: $link-visited;
-$nav-link-hover: $link-hover;
-$nav-dropdown-background: $background-color;
-$nav-dropdown-shadow: rgba(92, 51, 173, 0.2);
-$nav-dropdown-hover-bg: $border;
+$highlight-fg: #02000d;
+$highlight-bg: #dadada;
