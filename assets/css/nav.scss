@@ -1,155 +1,155 @@
 @use "var" as *;
 
 .post-navigation {
-    background-color: $background-color;
-    border-bottom: 1.5px solid $border;
-    padding:0;
-    margin-bottom: 2rem;
-    position: fixed;
-    width: 100vw;
-    z-index: 100;
+  background-color: $background-color;
+  border-bottom: 1.5px solid $border;
+  padding: 0;
+  margin-bottom: 2rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
 }
 
 .nav-container {
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-brand a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: $heading;
-    text-decoration: none;
-    color: $link-visited !important;
-    padding-left: 1rem;
-    transition: color 0.3s ease-in-out;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: $heading;
+  text-decoration: none;
+  color: $link-visited !important;
+  padding-left: 1rem;
+  transition: color 0.3s ease-in-out;
 
-    &:hover {
-        color: $link-hover !important;
-    }
+  &:hover {
+    color: $link-hover !important;
+  }
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 1.5px;
-    left: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5px;
+  left: 0;
 }
 
 .nav-link {
-    text-decoration: none;
+  text-decoration: none;
+  color: $link-visited;
+  padding: 1rem;
+  font-weight: 500;
+  font-family: $text;
+  transition: color 0.3s ease;
+  outline: 1.5px solid $border;
+  background: $background-color;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    color: $background-color !important;
+    background: $foreground-color !important;
+  }
+
+  &:visited {
     color: $link-visited;
-    padding: 1rem;
-    font-weight: 500;
-    font-family: $text;
-    transition: color 0.3s ease;
-    outline:1.5px solid $border;
-    background: $background-color;
-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
 
-    &:hover {
-        color: $background-color !important;
-        background: $foreground-color !important;
+  &.dropdown-toggle {
+    cursor: pointer;
+
+    &::after {
+      content: " ▼";
+      font-size: 0.8rem;
+      margin-left: 0.25rem;
+      transition: transform 0.3s ease;
     }
-
-    &:visited {
-        color: $link-visited;
-    }
-
-    &.dropdown-toggle {
-        cursor: pointer;
-
-        &::after {
-            content: " ▼";
-            font-size: 0.8rem;
-            margin-left: 0.25rem;
-            transition: transform 0.3s ease;
-        }
-    }
+  }
 }
 
 .nav-dropdown {
-    position: relative;
+  position: relative;
 
-    &:hover {
-        .dropdown-toggle::after {
-            transform: rotate(180deg);
-        }
-
-        .dropdown-menu {
-            display: block;
-        }
+  &:hover {
+    .dropdown-toggle::after {
+      transform: rotate(180deg);
     }
+
+    .dropdown-menu {
+      display: block;
+    }
+  }
 }
 
 .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: $background-color;
-    border: 1.5px solid $border;
-    border-radius: 4px;
-    padding: 0.5rem 0;
-    min-width: 130px;
-    display: none;
-    z-index: 1000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: $background-color;
+  border: 1.5px solid $border;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  min-width: 130px;
+  display: none;
+  z-index: 1000;
 }
 
 .dropdown-item {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: $link-visited;
-    text-decoration: none;
-    font-family: $text;
-    transition: all 0.3s ease;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: $link-visited;
+  text-decoration: none;
+  font-family: $text;
+  transition: all 0.3s ease;
 
-    &:hover {
-        background-color: $border;
-        color: $link-hover;
-    }
+  &:hover {
+    background-color: $border;
+    color: $link-hover;
+  }
 }
 
 // Responsive design
 @media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
 
-    .nav-brand a {
-        font-size: 1.25rem;
-    }
+  .nav-brand a {
+    font-size: 1.25rem;
+  }
 
-    .dropdown-menu {
-        position: static;
-        display: block;
-        box-shadow: none;
-        border: none;
-        padding: 0;
-        margin-top: 0.5rem;
-        background: transparent;
-    }
+  .dropdown-menu {
+    position: static;
+    display: block;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin-top: 0.5rem;
+    background: transparent;
+  }
 
-    .nav-dropdown:hover .dropdown-menu {
-        display: block;
-    }
+  .nav-dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
-    .nav-links {
-        gap: 0.5rem;
-    }
+  .nav-links {
+    gap: 0.5rem;
+  }
 
-    .nav-link {
-        font-size: 0.9rem;
-    }
+  .nav-link {
+    font-size: 0.9rem;
+  }
 }

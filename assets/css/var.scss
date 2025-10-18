@@ -1,10 +1,12 @@
+@use "fonts";
+
 $foreground-color: #dadada;
 $background-color: #02000d;
 $border: #332f48;
 $link-default: #b793ff;
 $link-visited: #9966ff;
 $link-hover: #cfbbf6;
-$text: "Mona Sans", "EB Garamond", sans-serif;
-$heading: "Hubot Sans", sans;
+$text: "Neue Montreal", "Arial", sans;
+$heading: "Rader", "Century Gothic", sans-serif;
 $highlight-fg: #02000d;
 $highlight-bg: #dadada;
