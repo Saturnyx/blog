@@ -1,7 +1,7 @@
 @use "fonts";
 
 $foreground-color: #dadada;
-$background-color: #02000d;
+$background-color: #211e33;
 $border: #332f48;
 $link-default: #b793ff;
 $link-visited: #9966ff;
@@ -9,5 +9,5 @@ $link-hover: #cfbbf6;
 $text: "Neue Montreal", "Arial", sans;
 $heading: "Rader", "Century Gothic", sans-serif;
 $monospace: "Jetbrains Mono", monospace;
-$highlight-fg: #02000d;
-$highlight-bg: #dadada;
+$highlight-fg: $background-color;
+$highlight-bg: $foreground-color;
