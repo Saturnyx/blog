@@ -4,145 +4,168 @@
 @use "posts";
 @use "fonts";
 @use "extern.css";
+@use "syntax.css";
 
 body {
-  font-family: $text;
-  color: $foreground-color;
-  line-height: 1.6;
-  margin: 0;
-  background-color: $background-color;
+    font-family: $text;
+    color: $foreground-color;
+    line-height: 1.6;
+    margin: 0;
+    background-color: $background-color;
 }
 
 main {
-  padding: 0 27vw;
+    padding: 0 27vw;
 }
 
 @media (max-width: 600px) {
-  main {
-    padding: 0 7vw;
-  }
+    main {
+        padding: 0 7vw;
+    }
 }
 h1 {
-  color: $foreground-color;
-  text-align: center;
-  font-size: clamp(2rem, 5vw, 6rem);
-  font-family: $heading;
-  line-height: 1;
-  padding: 6rem 0 1rem 0;
-  margin: 5vh 0 0 0;
+    color: $foreground-color;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 6rem);
+    font-family: $heading;
+    line-height: 1;
+    padding: 6rem 0 1rem 0;
+    margin: 5vh 0 0 0;
 }
 
 h2 {
-  color: $foreground-color;
-  text-align: left;
-  font-size: clamp(1.7rem, 3vw, 4rem);
-  font-family: $heading;
-  line-height: 1;
-  padding: 1rem 0 0 0;
-  margin: 0;
+    color: $foreground-color;
+    text-align: left;
+    font-size: clamp(1.7rem, 3vw, 4rem);
+    font-family: $heading;
+    line-height: 1;
+    padding: 1rem 0 0 0;
+    margin: 0;
 }
 
 h3 {
-  color: $foreground-color;
-  text-align: left;
-  font-size: clamp(1.5rem, 2.5vw, 3rem);
-  font-family: $heading;
-  line-height: 1;
-  padding: 1rem 0 0 0;
-  margin: 0;
+    color: $foreground-color;
+    text-align: left;
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    font-family: $heading;
+    line-height: 1;
+    padding: 1rem 0 0 0;
+    margin: 0;
 }
 
 h4 {
-  color: $foreground-color;
-  text-align: left;
-  font-size: clamp(1.2rem, 2vw, 2rem);
-  font-family: $heading;
-  line-height: 1;
-  padding: 1rem 0 0 0;
-  margin: 0;
+    color: $foreground-color;
+    text-align: left;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-family: $heading;
+    line-height: 1;
+    padding: 1rem 0 0 0;
+    margin: 0;
 }
 
 p {
-  text-align: justify;
-  font-family: $text;
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
+    text-align: justify;
+    font-family: $text;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+code {
+    font-family: $monospace;
+    line-height: 1.5;
+    font-variant-ligatures: normal;
+    text-wrap: balance;
+}
+pre {
+    code {
+        font-size: 0.9rem;
+    }
+    .highlight {
+        border: none;
+    }
+}
+div {
+    .highlight:not(pre) {
+        border: 1.5px solid $border;
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+    }
 }
 
 ul,
 ol {
-  font-family: $text;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 1rem 0;
-  padding-left: 2rem;
+    font-family: $text;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+    padding-left: 2rem;
 }
 
 ul {
-  list-style-type: disc;
+    list-style-type: disc;
 }
 
 ol {
-  list-style-type: decimal;
+    list-style-type: decimal;
 }
 
 li {
-  margin: 0.5rem 0;
-  text-align: justify;
+    margin: 0.5rem 0;
+    text-align: justify;
 }
 
 a {
-  color: $link-default;
-  text-decoration: none;
+    color: $link-default;
+    text-decoration: none;
 
-  &:hover {
-    color: $link-hover;
-  }
+    &:hover {
+        color: $link-hover;
+    }
 
-  &:visited {
-    color: $link-visited;
-  }
+    &:visited {
+        color: $link-visited;
+    }
 }
 
 hr {
-  height: 1.5px;
-  color: $border;
-  background-color: $border;
-  border: none;
+    height: 1.5px;
+    color: $border;
+    background-color: $border;
+    border: none;
 }
 
 footer {
-  text-align: center;
-  margin-top: 2rem;
-  padding: 1rem;
-  color: $foreground-color;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: $foreground-color;
 }
 
 .subtitle {
-  text-align: center;
-  padding: 0 0 3rem 0;
-  margin: 0;
+    text-align: center;
+    padding: 0 0 3rem 0;
+    margin: 0;
 }
 
 html,
 body {
-  overflow-x: hidden; /* Remove horizontal scrollbar */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
 }
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
+    display: none; /* Chrome, Safari, Edge */
 }
 
 ::selection {
-  background-color: $highlight-bg;
-  color: $highlight-fg;
+    background-color: $highlight-bg;
+    color: $highlight-fg;
 }
 
 /* For Firefox compatibility */
 ::-moz-selection {
-  background-color: $highlight-bg;
-  color: $highlight-fg;
+    background-color: $highlight-bg;
+    color: $highlight-fg;
 }

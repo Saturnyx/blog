@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "My First Blog"
-description: "This is my first post on this new blog."
 date: 2025-08-16 18:38:55 +0800
+description: "This is my first post on this new blog."
 categories: general
 ---
 

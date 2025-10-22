@@ -1,8 +1,8 @@
 ---
 layout: post
 title: What is Mojo?
-description: "The next new Python? How do I use it?"
 date: 2025-08-22 09:37 +0800
+description: "The next new Python? How do I use it?"
 categories: programming-news
 ---
 

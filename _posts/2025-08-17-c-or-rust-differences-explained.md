@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "C++ or Rust: Differences Explained"
-description: "Why do we see more Rust apps each day? Is C++ really dying?"
 date: 2025-08-17 12:02 +0800
+description: "Why do we see more Rust apps each day? Is C++ really dying?"
 categories: programming-news
 ---
 
